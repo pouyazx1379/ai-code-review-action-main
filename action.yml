@@ -1,0 +1,16 @@
+name: "Tom Kashefi's AI Code Reviewer"
+description: "Leverages Google Gemini AI to analyze pull requests and provide feedback comments."
+author: "Tom Kashefi"
+branding:
+  icon: "check-circle"
+  color: "blue"
+inputs:
+  github_token:
+    description: "GitHub Token for accessing pull request information"
+    required: true
+  google_api_key:
+    description: "API Key for Google Gemini AI"
+    required: true
+runs:
+  using: "docker"
+  image: "Dockerfile"
